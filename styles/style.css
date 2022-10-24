@@ -1,0 +1,22 @@
+/* Card - img */
+.card {
+    width: 18rem;
+}
+
+.card img {
+    height: 20rem;
+    object-fit: cover;
+    object-position: left;
+}
+
+.carousel-item:nth-of-type(2):has(.card) img {
+    border-radius: 30px;
+}
+
+@media screen and (max-width: 746px) {
+    .carousel {
+        display: flex;
+        flex-flow: column wrap;
+
+    }
+}
